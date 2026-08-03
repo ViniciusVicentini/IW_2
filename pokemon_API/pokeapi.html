@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta de Pokémons</title>
+    <link rel="stylesheet" href="pokemon_api.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Busca Pokémon</h1>
+        <input type="text" id="pokemonInput" placeholder="Digite o nome ou ID da pokedex">
+        <button onclick="buscarPokemon()">Buscar</button>
+
+        <div id="resultado" style="display: none;">
+            <h2 id="pokeNome"></h2>
+            <p>Tipo: <span id="pokeTipo"></span></p>
+            <img id="pokeImg" src="" alt="Pokemon">
+            <br>
+            <button id="btnShiny">Ver Versão Shiny</button>
+        </div>
+    </div>
+
+    <script src="api.js"></script>
+</body>
+</html>
